@@ -3,7 +3,7 @@
 ## install:
 
 ```bash
-npm i -d prettier
+npm i -D prettier
 ```
 
 ## script
