@@ -44,7 +44,7 @@ npm i -D prettier husky lint-staged
 ```
 
 # DEBUG IN CHROME
-`launch.json`
+`.vscode/launch.json`
 ```json
 {
   "version": "0.2.0",
