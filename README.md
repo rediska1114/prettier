@@ -15,32 +15,34 @@ npm i -D prettier husky lint-staged
 ## add `.prettierrc`
 
 ```json
- "arrowParens": "avoid",
- "bracketSpacing": true,
- "htmlWhitespaceSensitivity": "strict",
- "jsxBracketSameLine": false,
- "jsxSingleQuote": true,
- "printWidth": 100,
- "quoteProps": "as-needed",
- "semi": false,
- "singleQuote": true,
- "tabWidth": 2,
- "trailingComma": "none",
- "useTabs": true
+{
+  "arrowParens": "avoid",
+  "bracketSpacing": true,
+  "htmlWhitespaceSensitivity": "strict",
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": true,
+  "printWidth": 100,
+  "quoteProps": "as-needed",
+  "semi": false,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "none",
+  "useTabs": true
+}
 ```
 ## add to `package.json`
 ```json
-"husky": {    
-   "hooks": {      
-    "pre-commit": "lint-staged"
-   }  
-},
-"lint-staged": {
-		"src/**/*.(js|jsx|ts|tsx|json|css|scss|md)": [
-			"prettier --write",
-			"git add"
-		]
-	}
+"husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.(js|jsx|ts|tsx|json|css|scss|md)": [
+      "prettier --write",
+      "git add"
+    ]
+  }
 ```
 
 # DEBUG IN CHROME
