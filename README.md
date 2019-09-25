@@ -1,4 +1,4 @@
-# Helps
+# Prettier
 
 ## install:
 
