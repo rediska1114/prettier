@@ -9,7 +9,7 @@ npm i -D prettier husky lint-staged
 ## script
 
 ```ts
-"prettier": "prettier --write src/**/*.{ts,tsx,css,scss,md,json,js,jsx}"
+"prettier": "prettier --write 'src/**/*.{ts,tsx,css,scss,md,json,js,jsx}'"
 ```
 
 ## add `.prettierrc`
